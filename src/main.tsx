@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import App from "./App.tsx";
 import UploadPage from "./UploadPage";
@@ -9,11 +9,11 @@ import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/Epson-Image-Printer/" element={<App />} />
-        <Route path="/Epson-Image-Printer/upload" element={<UploadPage />} />
-      </Routes>
-    </BrowserRouter>
+    <HashRouter>
+  <Routes>
+    <Route path="/" element={<App />} />
+    <Route path="/upload" element={<UploadPage />} />
+  </Routes>
+</HashRouter>
   </StrictMode>
 );
