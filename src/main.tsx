@@ -11,8 +11,8 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/upload" element={<UploadPage />} />
+        <Route path="/Epson-Image-Printer/" element={<App />} />
+        <Route path="/Epson-Image-Printer/upload" element={<UploadPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
